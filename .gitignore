@@ -1,0 +1,5 @@
+#zip file
+*.zip
+#image file
+*.jpg
+*.png

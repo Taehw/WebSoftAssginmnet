@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- name은 굳이 필요하지 않음, id랑 같게 지어주면 될듯 -->
+    <fieldset>
+        <!-- filedset과 legend는 셋트 -->
+        <legend>Personal informaiton</legend>
+
+        <label for="Fname">First name:</label><br>
+        <input type="text" id="Fname"><br>
+
+        <label for="Lname">Last name:</label><br>
+        <input type="text" id="Lname"><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="volvo">saab</option>
+            <option value="volvo">opel</option>
+            <option value="volvo">Audi</option>
+        </select>
+        
+        <br><br>
+
+        <!-- rows와 cols는 textarea의 크기를 지정 -->
+        <textarea id="ta" name="ta" rows="4" cols="50">the cat was playing in the 
+                   garden.</textarea><br>
+                   <!-- textarea에서 enter치면 반영된다 진짜 글쓰는 거라고 생각하기 -->
+        <input type="submit" value="Submit">
+        <!-- <button type="button">Submit</button> 라고 해도 됨 -->
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form없어도 만들수는 있는거 아니농 -->
+    <form>
+        Gender<br>
+        <input type="radio" id="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female">
+        <label for="female">Female</label><br><br>
+        Position<br>
+        <input type="checkbox" id="front">
+        <label for="front">Front-end</label><br>
+        <input type="checkbox" id="back">
+        <label for="back">Back-end</label><br>
+        <input type="checkbox" id="inf">
+        <label for="inf">Infrastructure</label><br>
+    </form><br><br><hr>
+
+    <!-- div영역으로 geder와 postion나눠주고 label 걸어주기 -->
+    <!-- 아니 name 속성값을 같은 걸 줘서 뭍어야지 radio의 기능을 할수 있음 이거 개중요 -->
+    <form>
+        <label for="gender">Gender</label>
+        <div id="geder">
+            <input type="radio" id="male" name="gdr">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gdr">
+            <label for="female">Female</label><br><br>
+        </div>
+        
+        <label for="position">Position</label><br>
+        <div id="position">
+            <input type="checkbox" id="front">
+            <label for="front">Front-end</label><br>
+            <input type="checkbox" id="back">
+            <label for="back">Back-end</label><br>
+            <input type="checkbox" id="inf">
+            <label for="inf">Infrastructure</label><br>
+        </div>
+    </form>
+
+    <br><hr><br>
+
+    <form>
+        <input type="radio" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female">
+        <label for="female">Female</label><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

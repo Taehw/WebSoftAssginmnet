@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Controls</h1>
+    <p>Numbers to humanize:</p>
+    <div id="output"></div>
+    
+    <script>
+        const numbers = [1, 8, 301, 402, 711];
+
+        const outputDiv = document.getElementById('output');
+
+        for (let i = 0; i < numbers.length; i++) {
+            const num = numbers[i];
+            let suffix = 'th';
+
+            if (num % 100 < 11 || num % 100 > 13) { 
+                switch (num % 10) {
+                    case 1:  
+                        suffix = 'st';
+                        break;
+                    case 2:  
+                        suffix = 'nd';
+                        break;
+                    case 3:  
+                        suffix = 'rd';
+                        break;
+                }
+            }
+                
+            const p = document.createElement('p');
+            p.textContent = `${num}${suffix}`; 
+            outputDiv.appendChild(p);
+        }
+    </script>
+</body>
+
+</html>

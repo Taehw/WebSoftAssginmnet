@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline1{
+            display : inline;
+            margin: 30px;
+            padding: 10px;
+        }
+        .inline1:hover{
+            transform: scaleX(1);
+            text-decoration: underline;
+            background-color: blue; /* 호버 시 배경색 */
+        }
+        .top{
+            border-radius: 2px;
+            border-color: red;
+            border-style: solid; /* border-style 추가 */
+            border-width: 1px; /* 경계선의 두께를 지정 */
+            padding-left: 70px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .middle {
+            display: flex;
+        }
+
+        .middle_left {
+            flex: 1;
+            position: relative; /* 내부 요소에 position: relative; 적용 */
+        }
+
+        .middle_right {
+            flex: 1;
+            position: static; /* 내부 요소에 position: static; 적용 */
+        }
+        .up-link {
+            position: fixed; /* 고정 위치로 설정 */
+            bottom: 20px;
+            right: 20px;
+            display: none; /* 처음에는 숨김 */
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .up-link.show {
+            display: block; /* 스크롤이 발생하면 보이도록 변경 */
+        }
+        .real_top{
+            text-align: center;
+        }
+        .bottom {
+            text-align: center; /* 가운데 정렬 */
+            background-color: #F5DEB3; /* 모래색 배경 */
+            padding: 10px; /* 내부 여백 */
+        }
+        
+        .bottom h1 {
+            margin: 10px; /* 각 제목 사이 여백 */
+        }
+    </style>
+</head>
+<body>
+    <div class="real_top"><h1>MY HOMEPAGE</h1></div>
+    <div class="top">
+        <div class="inline1">HOME</div>
+        <div class="inline1">INTRODUCE</div>
+        <div class="inline1">CONTENT</div>
+        <div class="inline1">SCHEDULE</div>
+        <div class="inline1">MORE</div>
+    </div>
+    <div class="middle">
+        <div class="middle_left">
+            <img src="../image/증명사진.png" alt="taehwa" height="300px">
+        </div>
+        <div class="middle_right">
+            <h2>Introduce</h2>
+            <p>hello my name is Taehwa</p>
+            <p>my major is computer science</p>
+            <p>my number is 2020039079</p>
+            <p>my hobby is coding</p>
+        </div>
+    </div>
+    <hr>
+    <div class="bottom">
+        <h1>content</h1>
+        <h1>content</h1>
+        <h1>content</h1>
+        <h1>content</h1>
+    </div>
+</body>
+</html>
